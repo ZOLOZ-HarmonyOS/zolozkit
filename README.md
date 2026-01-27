@@ -1,21 +1,29 @@
 # zolozkit
-zolozkit for HarmonyOS
-# Background
-This repository provide an example to help customer to integrate ZOLOZ SDK with ease.
-# Getting started
-## Prequisites
-Before integrating the ZOLOZ HarmonyOS SDK, ensure that your DevEco Studio version is 5.0.5or later.
 
-# SDK Integration
-## Step 1: Download and install SDK
-1. Open the zolozkit repository:https://ohpm.openharmony.cn/ohpm/zolozkit
-2. Select the desired ZOLOZKit version (it is recommended to use the latest version)
-3. Install the package using the OHPM CLI
+ZOLOZKit for HarmonyOS
 
-```json
-ohpm install @zoloz/zolozkit@<version\>  
+## Background
 
-## Step 2: Importing SDK into Main Project
+This repository provides an example to help customers integrate the ZOLOZ SDK with ease.
+
+## Getting Started
+
+### Prerequisites
+
+Before integrating the ZOLOZ HarmonyOS SDK, ensure that your DevEco Studio version is **5.0.5 or later**.
+
+## SDK Integration
+
+### Step 1: Download and Install SDK
+
+1. Open the ZOLOZKit repository: [https://ohpm.openharmony.cn/ohpm/zolozkit](https://ohpm.openharmony.cn/ohpm/zolozkit)
+2. Select the desired `zolozkit` version (it is recommended to use the latest version).
+3. Install the package using the OHPM CLI:
+
+```bash
+ohpm install @zoloz/zolozkit@<version>
+```
+### Step 2: Download and Install SDK
 ```arkts
 //import zoloz
 import {ZolozFacade,ZolozRequest,ZolozResponse} from "@zoloz/zolozkit"
@@ -24,4 +32,4 @@ import {ZolozFacade,ZolozRequest,ZolozResponse} from "@zoloz/zolozkit"
 const request = new ZolozRequest(clientCfg, { rsaPubKey });
 const response= await ZolozFacade.getInstance().startWithRequest(getContext(this),request);
 
-
+```
