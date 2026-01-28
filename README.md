@@ -23,7 +23,7 @@ Before integrating the ZOLOZ HarmonyOS SDK, ensure that your DevEco Studio versi
 ```bash
 ohpm install @zoloz/zolozkit@<version>
 ```
-### Step 2: Download and Install SDK
+### Step 2: Import SDK
 ```arkts
 //import zoloz
 import {ZolozFacade,ZolozRequest,ZolozResponse} from "@zoloz/zolozkit"
