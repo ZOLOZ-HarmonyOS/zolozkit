@@ -1,40 +1,45 @@
 # zolozkit
 
-ZOLOZKit for HarmonyOS
+> **⚠️ DEPRECATED / 已废弃**
+>
+> 本仓库已废弃，不再维护。请迁移至新仓库：[zoloz-demo-harmonyOS](https://github.com/zoloz-pte-ltd/zoloz-demo-harmonyOS)
 
-## Background
+~~ZOLOZKit for HarmonyOS~~
 
-This repository provides an example to help customers integrate the ZOLOZ SDK with ease.
+~~## Background~~
 
-## Getting Started
+~~This repository provides an example to help customers integrate the ZOLOZ SDK with ease.~~
 
-### Prerequisites
+~~## Getting Started~~
 
-Before integrating the ZOLOZ HarmonyOS SDK, ensure that your DevEco Studio version is **5.0.5 or later**.
+~~### Prerequisites~~
 
-## SDK Integration
+~~Before integrating the ZOLOZ HarmonyOS SDK, ensure that your DevEco Studio version is **5.0.5 or later**.~~
 
-### Step 1: Download and Install SDK
+~~## SDK Integration~~
 
-Method 1: Install via command line from the third-party library repository
-1. Open the [ZOLOZ HarmonyOS repository.](https://ohpm.openharmony.cn/)
-2. Select the desired ZOLOZKit version (it is recommended to use the latest version).
-3. In the root directory of the Hap/Har that needs to be integrated, install the SDK using the following command.
+~~### Step 1: Download and Install SDK~~
+
+~~Method 1: Install via command line from the third-party library repository~~
+~~1. Open the [ZOLOZ HarmonyOS repository.](https://ohpm.openharmony.cn/)~~
+~~2. Select the desired ZOLOZKit version (it is recommended to use the latest version).~~
+~~3. In the root directory of the Hap/Har that needs to be integrated, install the SDK using the following command.~~
 
 ```bash
 ohpm install @zoloz/zolozkit@<version>
 ```
 
-4. Verify installation.
-After installation, the dependencies section in the on-package.json file at the root directory should display zolozkit.
+~~4. Verify installation.~~
+~~After installation, the dependencies section in the on-package.json file at the root directory should display zolozkit.~~
 
-Method 2: Manual download and installation
-1. Open the ZOLOZ HarmonyOS repository.https://github.com/ZOLOZ-HarmonyOS/zolozkit
-2. Select the desired ZOLOZKit version (it is recommended to use the latest version), and download the corresponding zolozkit.har package.
-3. Drag the downloaded SDK file (.har) into the libs directory of your project.
-4. Manually add the following dependency configuration in the on-package.json file at the root directory of your project.
+~~Method 2: Manual download and installation~~
+~~1. Open the ZOLOZ HarmonyOS repository.https://github.com/ZOLOZ-HarmonyOS/zolozkit~~
+~~2. Select the desired ZOLOZKit version (it is recommended to use the latest version), and download the corresponding zolozkit.har package.~~
+~~3. Drag the downloaded SDK file (.har) into the libs directory of your project.~~
+~~4. Manually add the following dependency configuration in the on-package.json file at the root directory of your project.~~
 
-### Step 2: Import SDK
+~~### Step 2: Import SDK~~
+
 ```arkts
 //import zoloz
 import {ZolozFacade,ZolozRequest,ZolozResponse} from "@zoloz/zolozkit"
@@ -42,5 +47,4 @@ import {ZolozFacade,ZolozRequest,ZolozResponse} from "@zoloz/zolozkit"
 //use
 const request = new ZolozRequest(clientCfg, { rsaPubKey });
 const response= await ZolozFacade.getInstance().startWithRequest(getContext(this),request);
-
 ```
